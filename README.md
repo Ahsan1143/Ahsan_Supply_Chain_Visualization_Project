@@ -2,6 +2,49 @@ Supply Chain Analytics Dashboard
 Overview
 This interactive Power BI dashboard provides a comprehensive view of supply chain performance across regions and product categories. The dashboard is designed to highlight key performance indicators (KPIs) such as on-time delivery rate, average delivery time, cost per unit shipped, and delivery performance. It enables stakeholders to identify inefficiencies, optimize logistics, and improve decision-making.
 
+DAX Calculations Used in the Supply Chain Analytics Dashboard
+On-Time Delivery Rate
+This calculation determines the percentage of orders delivered on time by dividing the number of on-time deliveries by the total number of orders and multiplying by 100.
+
+Formula:
+OnTimeDeliveryRate = (Count of On-Time Deliveries / Total Deliveries) * 100
+Average Delivery Time by Region
+This calculates the average delivery time (in days) for each region by averaging the DeliveryTime field.
+
+Formula:
+AvgDeliveryTimeByRegion = Average(DeliveryTime) for each Region
+Cost Per Unit Shipped
+This measure calculates the shipping cost per unit by dividing the total shipping cost by the total order volume.
+
+Formula:
+CostPerUnitShipped = Total Shipping Cost / Total Order Volume
+Delayed Shipments Percentage by Product
+This calculation determines the percentage of delayed shipments for each product category by dividing the number of delayed shipments by the total number of shipments for that product and multiplying by 100.
+
+Formula:
+DelayedPercentageByProduct = (Count of Delayed Shipments for a Product / Total Shipments for that Product) * 100
+Inventory Turnover Rate
+This metric calculates how frequently inventory is replenished by dividing the total order volume by the average inventory level.
+
+Formula:
+InventoryTurnover = Total Order Volume / Average Inventory Level
+Revenue Contribution by Region
+This measure calculates the percentage of total revenue contributed by each region by dividing the revenue of a specific region by the total revenue and multiplying by 100.
+
+Formula:
+RevenueByRegion = (Region Revenue / Total Revenue) * 100
+Cumulative Orders Over Time
+Tracks the cumulative number of orders over time by summing the total orders up to a given date.
+
+Formula:
+CumulativeOrders = Total Orders up to a given Shipment Date
+Delivery Performance Index
+A composite KPI that combines on-time delivery rate and average delivery time to measure overall delivery efficiency.
+
+Formula:
+DeliveryPerformanceIndex = On-Time Delivery Rate / (Average Delivery Time + 1)
+
+
 Dashboard Features
 On-Time Delivery Rate by Region (Treemap):
 
