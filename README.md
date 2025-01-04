@@ -1,65 +1,56 @@
 Supply Chain Analytics Dashboard
 Overview
-This project involved designing a dynamic and interactive Power BI dashboard to monitor and optimize supply chain efficiency. The goal was to provide actionable insights into key performance indicators (KPIs) such as on-time delivery rates, average delivery times, shipping costs, and inventory turnover. By analyzing supply chain data, the dashboard empowers decision-makers to identify bottlenecks, improve logistics, and optimize costs.
+This interactive Power BI dashboard provides a comprehensive view of supply chain performance across regions and product categories. The dashboard is designed to highlight key performance indicators (KPIs) such as on-time delivery rate, average delivery time, cost per unit shipped, and delivery performance. It enables stakeholders to identify inefficiencies, optimize logistics, and improve decision-making.
 
-Process and Steps Taken
-Dataset Preparation:
+Dashboard Features
+On-Time Delivery Rate by Region (Treemap):
 
-Generated a realistic dataset with expanded regions and product categories to simulate real-world supply chain operations.
-Included critical fields such as shipment and delivery dates, delivery status, inventory levels, shipping costs, and order volumes.
-Ensured varied delivery times across regions to reflect geographic and logistical differences.
-Data Import and Cleaning:
+Visualizes the percentage of on-time deliveries across different regions.
+Insight: Regions like North America and Europe show better performance, while Africa and South America lag behind, highlighting areas for improvement.
+Average Delivery Time by Product (Bar Chart):
 
-Loaded the dataset into Power BI and verified data integrity.
-Created calculated columns for delivery time and on-time status to enhance analysis.
-DAX Measures for KPIs:
+Displays the average delivery time for each product category.
+Insight: Products like Books and Clothing have shorter delivery times, while Furniture and Food take longer, indicating potential logistical challenges for these categories.
+Cost Per Unit Shipped by Product (Bar Chart):
 
-Developed advanced DAX measures to calculate key metrics:
-On-Time Delivery Rate: Percentage of shipments delivered on time.
-Average Delivery Time by Region: Average days taken to deliver shipments in each region.
-Cost Per Unit Shipped: Shipping cost per unit to measure efficiency.
-Delayed Shipments Percentage by Product: Percentage of delayed shipments for each product category.
-Inventory Turnover Rate: Frequency of inventory replenishment.
-Revenue Contribution by Region: Share of total revenue from each region.
-Delivery Performance Index: Combined metric for delivery efficiency.
-Dashboard Design:
+Shows the average shipping cost per unit for each product category.
+Insight: Electronics and Automotive have higher shipping costs, suggesting opportunities for cost optimization in these categories.
+Delivery Performance Index by Product (Line Chart):
 
-Created visualizations to present insights effectively:
-KPI Cards: For quick access to on-time delivery rate, average delivery time, and other key metrics.
-Bar and Column Charts: To compare delivery performance and cost efficiency by region and product.
-Line Charts: To track cumulative orders over time and identify trends.
-Pie and Tree Maps: For revenue distribution and inventory levels.
-Conditional Formatting: Applied color-coded visuals (green, yellow, red) to highlight performance thresholds.
+Combines on-time delivery and average delivery time into a single performance metric for each product.
+Insight: Toys and Books perform well, while Food and Furniture have lower indices, indicating areas needing improvement.
+Cumulative Orders by Delivery Time and Product (Stacked Area Chart):
+
+Tracks cumulative orders over time, segmented by product category.
+Insight: Peaks in Electronics and Clothing orders highlight periods of high demand, helping optimize inventory and staffing.
+Revenue by Region and Product (Clustered Bar Chart):
+
+Shows revenue contribution by region and product category.
+Insight: North America and Europe contribute the most revenue, with Electronics and Furniture being top-performing products.
 Insights Gained
-On-Time Delivery Analysis:
+Regional Performance:
 
-Identified regions with low on-time delivery rates, such as Africa and South America, highlighting logistical challenges.
-Product-Specific Performance:
+Africa and South America have lower on-time delivery rates, suggesting logistical challenges.
+North America and Europe are leading regions in terms of delivery efficiency and revenue contribution.
+Product-Specific Challenges:
 
-Certain product categories, such as Automotive and Furniture, had higher delayed shipment percentages, indicating potential supply chain inefficiencies.
-Cost and Revenue Optimization:
+High shipping costs for Automotive and Electronics suggest potential inefficiencies in transportation.
+Food and Furniture consistently underperform in delivery metrics, indicating the need for supply chain improvements.
+Order Trends:
 
-High shipping costs per unit in specific regions (e.g., Asia) suggested opportunities to renegotiate shipping contracts.
-Revenue Contribution Analysis revealed that North America and Europe were the most profitable regions.
-Inventory Efficiency:
-
-Regions with lower inventory turnover rates had higher delays, indicating poor stock management.
-Delivery Trends:
-
-Cumulative order analysis showed peak order volumes during specific months, enabling better resource allocation.
-Impact
+Significant peaks in Cumulative Orders for products like Electronics and Clothing highlight demand surges, enabling better resource allocation.
+Impact of the Dashboard
 Operational Improvements:
 
-Recommendations to optimize delivery times in underperforming regions.
-Implemented targeted strategies to reduce delays for high-risk product categories.
-Cost Reduction:
+Identified regions and products requiring attention, enabling targeted logistical improvements.
+Highlighted high-performing areas, reinforcing best practices.
+Cost Optimization:
 
-Identified regions and products with high shipping costs, leading to renegotiation of supplier contracts.
-Enhanced Decision-Making:
+Pinpointed products with high shipping costs, paving the way for renegotiating contracts or optimizing routes.
+Strategic Decision-Making:
 
-Provided clear, actionable insights into supply chain performance.
-Empowered stakeholders to proactively address inefficiencies, resulting in improved customer satisfaction and cost savings.
+Provided actionable insights to optimize inventory, improve delivery times, and increase overall supply chain efficiency.
 Future Enhancements
-Integrate real-time data for live monitoring of shipments.
-Incorporate predictive analytics to forecast delays and inventory shortages.
-Expand the dashboard to include environmental impact metrics, such as CO2 emissions per shipment.
+Implement real-time data tracking for live performance monitoring.
+Introduce predictive analytics to forecast demand and delivery delays.
+Expand KPIs to include environmental impact metrics, such as CO2 emissions per shipment.
